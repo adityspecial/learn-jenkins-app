@@ -44,7 +44,7 @@ pipeline {
                 }
             }
             environment {
-                NETLIFY_ACCOUNT_ID = 'e8f4dec0-a198-4a8f-9185-f786fdb3b2b9'  // Replace with your actual Netlify account ID
+                NETLIFY_ACCOUNT_ID = '67a1fdc2e6cde35c87f92ab5'  // Replace with your actual Netlify account ID
             }
             steps {
                 sh '''
