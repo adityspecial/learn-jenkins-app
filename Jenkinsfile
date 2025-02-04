@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build') { 
             agent {
                 docker {
                     image 'node:18-alpine'
@@ -49,7 +49,7 @@ pipeline {
             steps {
                 sh '''
                     npm install netlify-cli
-                    node_modules/.bin/netlify --version
+                    npx netlify --version
                     echo "Netlify Account ID: $NETLIFY_ACCOUNT_ID"
                 '''
             }
